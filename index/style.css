@@ -1,0 +1,333 @@
+ /* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the header */
+header {
+    background-color: blue;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Styles for the navigation container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styles for the circular profile pic */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Add margin to create space between "Contact" and "Ahmad Shadeed" */
+nav ul li:last-child {
+    margin-right: 20px;
+}
+
+/* Main content styles */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first {
+    flex: 1;
+    max-width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.second {
+    flex: 2;
+    max-width: 70%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+/* Styles for the icon column */
+.icon-column {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: white;
+    height: 70%;
+    width: 50%;
+    margin-left: 3cm;
+    padding: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.icon span {
+    display: block;
+    margin-top: 5px;
+}
+
+.text {
+    margin-top: 90%;
+}
+
+.top-rated-sellers {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.fire-icon {
+    margin-right: 10px;
+}
+
+/* Styles for the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-orders {
+    color: #888;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.top-articles {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.article img {
+    max-width: 50%;
+    height: auto;
+}
+
+.article-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.article-name {
+    font-weight: bold;
+}
+
+.article-author {
+    color: #4b12e6;
+    flex-direction: column;
+}
+
+.containerr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Search container styles */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: blue;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ /* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .first, .second {
+        max-width: 100%;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .articles-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 20px;
+        width: 100%;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+    .icon-column {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        background-color: white;
+        height: 70%;
+        width: 100%;
+        margin-left: 0cm;
+        padding: 0px;
+    }
+    .first {
+        flex: 1;
+        max-width: 100%;
+        background-color: #f0f0f0;
+    
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0px;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    .first, .second {
+        padding: 10px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .articles-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 20px;
+        width: 100%;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+    .icon-column {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        background-color: white;
+        height: 70%;
+        width: 50%;
+        margin-left: 3cm;
+        padding: 10px;
+    }
+    .first {
+        flex: 1;
+        max-width: 30%;
+        background-color: #f0f0f0;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        flex-direction: row;
+    }
+
+}
